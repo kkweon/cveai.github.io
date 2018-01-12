@@ -75,7 +75,7 @@ social:
     username: cveai
     url: https://github.com/cveai
     desc: Fork me on GitHub
-    share: true
+    share: false
 
 # Social sharing protocols
 # These are for automatically generating sharing metadata for FB and Twitter
