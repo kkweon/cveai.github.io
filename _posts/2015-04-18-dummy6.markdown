@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Multi-armed bandit"
+title:  "열개의팔을가진강도"
 date:   2015-04-18 08:43:59
 author: S.Chang
-categories: RL
+categories: 강화학습
 tags: lorem ipsum
 ---
 
