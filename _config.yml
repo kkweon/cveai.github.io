@@ -75,14 +75,14 @@ social:
     username: TheBenCentra
     url: https://twitter.com/
     desc: Follow me on Twitter
-    share: true
+    share: false
 
   - name: Facebook
     icon: facebook
     username: thebencentra
     url:
     desc: Friend me on Facebook
-    share: true
+   share: false
 
   - name: GitHub
     icon: github
@@ -96,14 +96,14 @@ social:
     username: Ben Centra
     url: https://www.linkedin.com/pub/ben-centra/47/769/60a
     desc: Connect with me on LinkedIn
-    share: true
+    share: false
 
   - name: Google+
     icon: google-plus
     username:
     url:
     desc: Add me to your Circles
-    share: true
+    share: false
 
   - name: YouTube
     icon: youtube
@@ -114,7 +114,7 @@ social:
 
   - name: Instagram
     icon: instagram
-    username:
+    username: 
     url:
     desc: Follow me on Instagram
     share: false
