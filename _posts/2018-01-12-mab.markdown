@@ -4,7 +4,7 @@ title:  "열개의 팔을 가진 강도"
 date:   2015-04-18 08:43:59
 author: S.Chang
 categories: 강화학습
-tags: lorem ipsum
+tags: 강화학습 RL
 ---
 
 Multi-armed bandit. 
