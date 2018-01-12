@@ -3,11 +3,11 @@ layout: post
 title:  "Multi-armed bandit"
 date:   2015-04-18 08:43:59
 author: S.Chang
-categories: 강화학습
+categories: RL
 tags: lorem ipsum
 ---
 
-RL
+RL 
 This is just a dummy post. Lorem ipsum and all the rest.
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
