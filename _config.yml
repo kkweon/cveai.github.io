@@ -72,7 +72,7 @@ descriptions:
 social:
   - name: GitHub
     icon: github
-    username: cveai
+    username:
     url: https://github.com/cveai
     desc: Fork me on GitHub
     share: false
