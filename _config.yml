@@ -82,7 +82,7 @@ social:
     username: thebencentra
     url:
     desc: Friend me on Facebook
-   share: false
+    share: false
 
   - name: GitHub
     icon: github
