@@ -89,7 +89,7 @@ social:
     username: cveai
     url: https://github.com/cveai
     desc: Fork me on GitHub
-    share: false
+    share: true
 
   - name: LinkedIn
     icon: linkedin
@@ -173,7 +173,7 @@ social:
     username:
     url:
     desc: Share to Reddit
-    share: true
+    share: false
 
   - name: "Hacker News"
     icon: hacker-news
