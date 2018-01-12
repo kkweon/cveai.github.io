@@ -9,8 +9,8 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: Centrarium
-subtitle: "A simple yet classy theme for your Jekyll website or blog"
+title: qi
+subtitle: "All about learning, reletlessly"
 email: schang.math@gmail.com
 name: S. Chang
 description: >
@@ -73,7 +73,7 @@ social:
   - name: Twitter
     icon: twitter
     username: TheBenCentra
-    url: https://twitter.com/TheBenCentra
+    url: https://twitter.com/
     desc: Follow me on Twitter
     share: true
 
@@ -86,8 +86,8 @@ social:
 
   - name: GitHub
     icon: github
-    username: bencentra
-    url: https://github.com/bencentra
+    username: cveai
+    url: https://github.com/cveai
     desc: Fork me on GitHub
     share: false
 
