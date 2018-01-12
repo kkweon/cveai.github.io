@@ -6,7 +6,7 @@ permalink: /about/
 
 <img src="{{ site.baseurl }}/assets/sch.JPG" title="Profile Picture" class="profile">
 
-*Quest* for anything learnable.
+**Quest** for anything learnable.
 
 Currently :
 - math
