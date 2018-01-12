@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Dummy Post 6"
+title:  "Multi-armed bandit"
 date:   2015-04-18 08:43:59
-author: Ben Centra
-categories: Dummy
+author: S.Chang
+categories: 강화학습
 tags: lorem ipsum
 ---
 
