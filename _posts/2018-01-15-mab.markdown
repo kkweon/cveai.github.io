@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "열개의 팔을 가진 "
+title:  "열개의 팔을 가진 강도"
 date:   2018-01-12 14:00:00
 author: 장승환
 categories: 기계학습
