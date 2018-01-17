@@ -8,4 +8,4 @@ tags: 강화학습 RL
 ---
 
 Multi-armed bandit. 
-\[f(x) = \frac{x}{x+1}\]
+**f(x) = \frac{x}{x+1}**
