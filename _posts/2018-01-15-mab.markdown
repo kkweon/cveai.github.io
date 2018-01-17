@@ -8,4 +8,4 @@ tags: 강화학습 RL
 ---
 
 Multi-armed bandit. 
-**a=b^2**
+** a=b^2 **
