@@ -19,3 +19,4 @@ tags: 강화학습 RL
 
 ![alt text](https://cveai.github.io/assets/var_small.jpeg "small variance"){: width="30px" height="30px"}
 ![alt text](https://cveai.github.io/assets/var_large.jpeg "large variance"){: width="30px" height="30px"}
+ 
