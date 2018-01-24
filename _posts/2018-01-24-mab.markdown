@@ -17,8 +17,8 @@ tags: 강화학습 RL
 
 한편, 분산은 시행을 했을 때 기대값에 가까운 값이 나올 가능성의 정도를 나타낸다고 볼 수 있다. 예를 들어 아래 그림으로 표현된 두 분포를 생각해보면 분산이 상대적으로 작은 (a)의 경우... 분산이 큰 (b)
 
-![alt text](https://cveai.github.io/assets/var_small.jpeg "small variance"){: width="30px" height="30px"}
-![alt text](https://cveai.github.io/assets/var_large.jpeg "large variance"){: width="30px" height="30px"}
+![alt text](https://cveai.github.io/assets/var_small.jpeg "small variance") {: width="30px" height="30px"}
+![alt text](https://cveai.github.io/assets/var_large.jpeg "large variance") {: width="30px" height="30px"}
  
 또 한가지, 분산이 작은 경우 상대적으로 반복 시행의 평균을 통해 상대적으로 빠르게 기대값에 접근해갈 것임을 알 수 있다. (물론 분산이 큰 경우에도 느기기는 하지만 기대값에 접근해간다.) 이 원리를 이용하면, 슬롯머신이 정규분포를 따르지만 그 기대값을 모르는 경우에도 많은 반복 시행을 통해서 그 분포의 기대값이 얼마인지를 추정해볼 수 있다. 극단적인 경우로 분산이 0인 다음 그림의 분포는 "항상" 그리고 "반드시" 기대값인 0을 주게된다.
 
@@ -28,6 +28,6 @@ tags: 강화학습 RL
 
 Multi-armed bandit. 팔 여러개 달린 강도란 뜻이다. 카지노의 슬롯 머신을 가리켜 one armed bandit, 즉 “팔하나 달린 강도”라고 부르는 데서 유래한 용어로, "사실상" 돈을 강탈해간다는 의미에서 그러하다. 
 
-![alt text](https://cveai.github.io/assets/one-armed-bandi.jpg "One-armed banit")
+![alt text](https://cveai.github.io/assets/one-armed-bandit.jpg "One-armed banit")
 
 슬롯머신을 생각하자. 이번에는 한 방에 열개의 슬롯머신이 놓여져있다: 1번에서 10번까지 번호가 붙여진 기계들. 이제 agent의 임무는 열개의 머신 중에 하나를 골라 레버를 당기는 시행을 반복하는 것이다. 목표는 반복 시행을 통해 나오는 숫자의 "합"을 최대화하는 것.
