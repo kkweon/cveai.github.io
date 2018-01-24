@@ -17,5 +17,5 @@ tags: 강화학습 RL
 
 한편, 분산은 시행을 했을 때 기대값에 가까운 값이 나올 가능성의 정도를 나타낸다고 볼 수 있다. 예를 들어 아래 그림으로 표현된 두 분포를 생각해보면 분산이 상대적으로 작은 (a)의 경우... 분산이 큰 (b)
 
-![alt text](https://cveai.github.io/assets/var_small.jpeg "small variance")
-![alt text](https://cveai.github.io/assets/var_large.jpeg "large variance")
+![alt text](https://cveai.github.io/assets/var_small.jpeg "small variance"){: width="100px" height="20px"}
+![alt text](https://cveai.github.io/assets/var_large.jpeg "large variance"){: width="100px" height="20px"}
