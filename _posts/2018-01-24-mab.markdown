@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "열개의 팔을 가진 강도"
-date:   2018-01-18 00:00:00
+date:   2018-01-24 00:00:00
 author: 장승환
 categories: 기계학습
 tags: 강화학습 RL
@@ -16,3 +16,6 @@ tags: 강화학습 RL
 슬롯머신의 레버를 당기면  기대값이 0이고 분산이 1인 정규분포(Gaussian distribution, normal distribution)에 따라 숫자를 토해내는 이상적인 상황을 생각하자. 여기서 평균이 0인 분포를 따른다는 것은, 이 슬롯머신의 레버를 당기는 시행을 반복하면서 나오는 숫자들의 평균을 계산해보면 그 시행 횟수가 많아 수록 그 평균이 점점 0에 가까워질 것이라는 것을 의미한다. 
 
 한편, 분산은 시행을 했을 때 기대값에 가까운 값이 나올 가능성의 정도를 나타낸다고 볼 수 있다. 예를 들어 아래 그림으로 표현된 두 분포를 생각해보면 분산이 상대적으로 작은 (a)의 경우... 분산이 큰 (b)
+
+![(a)](https://cveai.github.io/assets/var_small.jpg "small variance")
+![alt text](https://cveai.github.io/assets/var_large.jpg "large variance")
