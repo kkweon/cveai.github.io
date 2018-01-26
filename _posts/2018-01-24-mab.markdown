@@ -29,8 +29,12 @@ tags: 강화학습 RL
 Multi-armed bandit. 팔 여러개 달린 강도란 뜻이다. 카지노의 슬롯 머신을 가리켜 one armed bandit, 즉 “팔하나 달린 강도”라고 부르는 데서 유래한 용어로, "사실상" 돈을 강탈해간다는 의미에서 그러하다. 
 
 ![alt text](https://cveai.github.io/assets/one-armed-bandit.jpg "One-armed banit")
+https://commons.wikimedia.org/wiki/File:One-Armed_Bandits_at_Stockmen%27s_Hotel,_Elko,_Nevada_(83581).jpg
 
-이제 1번부터 10번까지 번호가 붙여진 열개의 슬롯머신이 놓여있는 방을 생각하자. Agent의 임무는 열개의 머신 중에 하나를 골라 레버를 당기는 시행을 반복하는 것이다. 목표는 반복 시행을 통해 나오는 숫자의 "합"을 최대화하는 것.
+이제 1번부터 10번까지 번호가 붙여진 열개의 슬롯머신이 놓여있는 방을 생각하자. Agent의 임무는 열개의 머신 중에 하나를 골라 레버를 당기는 시행을 반복하는 것이다. Agent의 목표는 반복 시행을 통해 나오는 숫자의 "합"을 최대화하는 것이다. “선택적" 요소가 포함되면서 agent가 어떤 action을 취했을 때 어떤 reward가 주어질 것인지에 대한 “가능성”을 평가 (evaluation) 해나가야 하고 그에 따라 어떤 패턴으로 행동해나가야 하는지 전략을 세워나야야 한다. 이 전략을 구체적으로 표현한 함수를 policy이라 부른다. 우리말로는 “정책” 정도로 부를 수 있을 것이다. 
+
+이 문제를 풀어나가는 주인공을 agent라 부르는데 각 time step 마다 열 개의 슬롯 머신 중에서 하나의 레버를 당기게 된다. 이렇게 1에서 10번 슬롯머신 중 하나의 레버를 "선택"해서 당기는 행위를 action이라 한다. 즉, 각 time step 마다 한번의 action을 취하게 된다. 시간(time step) t에서 agent가 취한 action을 $A_t$라고 하자. 
+
 
 
 **일반화된 강화학습 문제**
