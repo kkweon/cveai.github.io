@@ -59,4 +59,4 @@ Multi-armed bandit 문제는 강화학습 문제 중에서도 한가지 요소�
 일반화된 강화학습의 개념은 agent와 environment, 그리고 action, state, reward, policy라는 주요소들이 포함된 형태로 정의되는데 수학적으로는 MDP (Markov Decision Process)라는 모델로 기술된다. 
 
 **참고문헌.**
-1.  R. Sutton, A. Barto, Reinforcement leaning: an introduction, second edition ([final draft](http://incompleteideas.net/book/the-book-2nd.html)).
+1.  R. Sutton, A. Barto, *Reinforcement leaning: an introduction*, second edition ([final draft](http://incompleteideas.net/book/the-book-2nd.html)).
