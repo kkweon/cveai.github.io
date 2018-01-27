@@ -30,7 +30,7 @@ tags: 강화학습 RL
 Multi-armed bandit. 팔 여러개 달린 강도란 뜻이다. 카지노의 슬롯 머신을 가리켜 one armed bandit, 즉 “팔하나 달린 강도”라고 부르는 데서 유래한 용어로, "사실상" 돈을 강탈해간다는 의미에서 그러하다. 
 
 ![alt text](https://cveai.github.io/assets/one-armed-bandit.jpg "One-armed banit")
-<https://commons.wikimedia.org/wiki/File:One-Armed_Bandits_at_Stockmen%27s_Hotel,_Elko,_Nevada_(83581).jpg>
+[사진출처: wikipedia](https://commons.wikimedia.org/wiki/File:One-Armed_Bandits_at_Stockmen%27s_Hotel,_Elko,_Nevada_(83581).jpg)
 
 이제 1부터 10까지 번호가 붙여진 열개의 슬롯머신이 놓여있는 방을 머릿속에 떠올려보자. 
 
