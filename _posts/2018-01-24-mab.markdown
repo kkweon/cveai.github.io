@@ -32,7 +32,7 @@ Multi-armed bandit. 팔 여러개 달린 강도란 뜻이다. 카지노의 슬�
 ![alt text](https://cveai.github.io/assets/one-armed-bandit.jpg "One-armed banit")
 [사진출처: wikipedia](https://commons.wikimedia.org/wiki/File:One-Armed_Bandits_at_Stockmen%27s_Hotel,_Elko,_Nevada_(83581).jpg)
 
-이제 1부터 10까지 번호가 붙여진 열개의 슬롯머신이 놓여있는 방을 머릿속에 떠올려보자. 기대값이 0이고 분산이 1인 표준정규분포에 따라 숫자 열개를 추출하자: $m_1, m_2, \ldots, m_{10}$. 각 슬롯머신의 reward 분포는 기대값이 $m_i$이고 분산이 1인 정규분포에 따르도록 설정이 된다. 아래 그림에 reward 분포가 도식화되어 있는데 (조금 후에 설명할 어떤 이유 때문에) 그림에서는 $i$번째 머신의 기대값 $m_i$가 $q_\asterisk(i)$로 표시되어 있다.
+이제 1부터 10까지 번호가 붙여진 열개의 슬롯머신이 놓여있는 방을 머릿속에 떠올려보자. 기대값이 0이고 분산이 1인 표준정규분포에 따라 숫자 열개를 추출하자: $m_1, m_2, \ldots, m_{10}$. 각 슬롯머신의 reward 분포는 기대값이 $m_i$이고 분산이 1인 정규분포에 따르도록 설정이 된다. 아래 그림에 reward 분포가 도식화되어 있는데 (조금 후에 설명할 어떤 이유 때문에) 그림에서는 $i$번째 머신의 기대값 $m_i$가 $q_{\asterisk}(i)$로 표시되어 있다.
 
 ![alt text](https://cveai.github.io/assets/rew-dist.png "reward distribution")
 그림출처: Ch.2 of [1]
