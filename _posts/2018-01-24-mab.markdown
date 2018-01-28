@@ -37,7 +37,7 @@ Multi-armed bandit. 팔 여러개 달린 강도란 뜻이다. 카지노의 슬�
 ![alt text](https://cveai.github.io/assets/rew-dist.png "reward distribution")
 그림출처: Ch.2 of [1]
 
-Multi-armed bandit (여기서는 구체적으로 10-armed bandit) 문제는 슬롯머신들의 reward distribution을 모르는 상태에서 하나의 머신을 선택해 "팔"을 당겨 reward을 얻는 시행을 충분히 많은 횟수로 반복하면서 얻게되는 reward의 총합을 최대화 시키는 목적을 가진다. 이 문제를 풀어나가기 위해 수많은 횟수의 시행을 대신 수행하게 될 주인공을 agent라 부른다. Agent가 선택한 슬롯머신의 레버를 당기는 각 시점을 time step이라 부르고 열 개의 슬롯머신 중에서 하나의 레버를 당기게 "선택"해서 당기는 행위를 action이라 한다. Agent의 임무는 열개의 머신 중 하나를 골라 레버를 당기는 시행을 반복하는 것이다. 즉, 각 time step 마다 한번의 action을 취하게 된다. Agent의 목표는 반복 시행을 통해 나오는 숫자의 "합"을 최대화하는 것이다. “선택적" 요소가 포함되면서 agent가 어떤 action을 취했을 때 어떤 reward가 주어질 것인지에 대한 “가능성”을 평가 (evaluation) 해나가야 하고 그에 따라 어떤 패턴으로 행동해나가야 하는지 전략을 세워나야야 한다. 이 전략을 구체적으로 표현한 함수를 policy이라 부른다. 우리말로는 “정책” 정도로 부를 수 있을 것이다. 
+Multi-armed bandit (여기서는 구체적으로 10-armed bandit) 문제는 슬롯머신들의 reward distribution을 모르는 상태에서 선택한 하나의 머신 "팔"을 당겨 reward을 얻는 시행을 충분히 많은 횟수로 반복하면서 얻게되는 reward의 총합을 최대화 시키는 목적을 가진다. 이 문제를 풀어나가기 위해 수많은 횟수의 시행을 대신 수행하게 될 주인공을 agent라 부른다. Agent가 선택한 슬롯머신의 레버를 당기는 각 시점을 time step이라 부르고 열 개의 슬롯머신 중에서 하나의 레버를 당기게 "선택"해서 당기는 행위를 action이라 한다. Agent의 임무는 열개의 머신 중 하나를 골라 레버를 당기는 시행을 반복하는 것이다. 즉, 각 time step 마다 한번의 action을 취하게 된다. Agent의 목표는 반복 시행을 통해 나오는 숫자의 "합"을 최대화하는 것이다. “선택적" 요소가 포함되면서 agent가 어떤 action을 취했을 때 어떤 reward가 주어질 것인지에 대한 “가능성”을 평가 (evaluation) 해나가야 하고 그에 따라 어떤 패턴으로 행동해나가야 하는지 전략을 세워나야야 한다. 이 전략을 구체적으로 표현한 함수를 policy이라 부른다. 우리말로는 “정책” 정도로 부를 수 있을 것이다. 
 
  시간(time step) t에서 agent가 취한 action을 $A_t$라고 하자. 
 
