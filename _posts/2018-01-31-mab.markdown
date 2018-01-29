@@ -92,3 +92,6 @@ Multi-armed bandit 문제는 강화학습 문제 중에서도 한가지 요소�
 
 #### 참고문헌
 1.  R. Sutton, A. Barto, *Reinforcement leaning: an introduction*, second edition ([final draft](http://incompleteideas.net/book/the-book-2nd.html)).
+
+
+(혹시 오류나 부정확한 내용을 발견하시면 꼭 알려주시길 부탁드립니다.)
