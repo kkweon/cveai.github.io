@@ -50,7 +50,7 @@ Multi-armed bandit. 팔 여러개 달린 강도란 뜻이다. 카지노의 슬�
 
 Multi-armed bandit (여기서는 구체적으로 10-armed bandit) 문제는 슬롯머신들의 reward distribution을 모르는 상태에서 선택한 하나의 머신 "팔"을 당겨 reward을 얻는 시행을 충분히 많은 횟수로 반복하면서 얻게되는 reward의 총합을 최대화 시키야하는 문제다. 이 문제를 풀어나가기 위해 수많은 횟수의 시행을 반복하는 힘든 임무를 대신해 줄 주인공을 agent라 부르자. Agent가 선택한 슬롯머신의 레버를 당기는 각 시점을 time step이라 부르고 열 개의 슬롯머신 중에서 하나를 "선택"해서 레버를당기는 행위를 action이라 한다. 선택적 요소가 포함되면서 agent가 어떤 action을 취했을 때 어떤 reward가 주어질 것인지에 대한 “가능성”을 평가 (evaluation) 해나가야 하고 그에 따라 어떤 패턴으로 행동해나가야 하는지 전략을 세워나야야 함을 알 수 있다. 이 전략을 구체적으로 표현한 함수를 policy라 부른다. 우리말로는 “정책” 정도로 부를 수 있을 것이다. 어떤 time step (앞으로 "시간"이라고 부르겠다) $t$에서 agent가 취하는 action을 $A_t$, 그로 인해 얻게 되는 reward를 $R_t$로 부르기로 하자. 
 
-### Action의 가치를 어떻게 평가할 것인가
+#### Action의 가치를 어떻게 평가할 것인가
 
 슬롯머신들의 reward 분포가 그림 1 처럼 주어져있다고 하자. 먼저 우리가 각 머신들의 reward 분포를 전부 알아버린 상황을 가정해보자. 그럼 우리는 agent로 하여금 어떤 선택을 하도록 해야할까? 그렇다. 당연히 3번 슬로머신의 팔만 계속 당기도록 명령해야한 한다. 3번 선택하는 시행을 반복할 수로록 reward의 누적합은 그 기대값인 대략 1.5에 가까워져갈 것임에 비해 다른 아홉개의 머신들의 경우 그보다 작은 값으로 수렴해갈 것이기 때문이다. 그러면 이 문제를 햐결하는 열쇠는 가장 큰 기대값의 reward 분포를 가지는 슬롯머신이 3번이라는 것을 최대한 빨리 알아내는 일일 것이다. 즉, 3번 슬롯머신을 선택하는 action의 가치(value)가 가장 높다는 것을 파악하는 것이 문제의 핵심인 것이다. Reward 분포을 모르는 상태에서 어떻게 이것이 가능할까?
 
@@ -60,7 +60,7 @@ Multi-armed bandit (여기서는 구체적으로 10-armed bandit) 문제는 슬�
 
 이제 남은것은 구체적으로 $Q_t(a)$라는 함수를 정의하는데 이것이 최대한 적은 시간은 소모하여 $q_{* }(a)$에 접근하도록 잘 고안해야 할 것이다. 충분히 큰 $t$에 대해 함수값들이 충분히 근접했다면 $Q_t(a_3)$의 수치가 가장 클 것임을 알 수 있다. 따라서, 가치함수 $Q_t(a)$를 어떻게 잘 정의하는가가 bandit 문제를 푸는 핵심이라고 하겠다.
 
-### Exploitation vs. Exploration
+#### Exploitation vs. Exploration
 
 여태까지의 논의를 요약해보면, 10-armed bandit 문제를 해결하는 핵심은 가장 큰 가치$ q_{* }(a_i)$를 가지는 action $a_i$에 해당하는 슬롯머신을 최대한 빨리 알아내는 것이다. 그 이후에는 오로지 $a_i$라는 action만 취하면 얻는 reward의 총합을 최대화할 수 있을 것이다. 일반적으로 현재 가진 정보로 판단할 때 최대 가치를 가지는 action"만"을 선택해나가는 전략을 exploitation이라고 한고 그러한 개별 행동을 greedy action이라고 한다. 상황에 따라서 greedy action은 눈앞의 이익만 쫓는 탐욕스런 행동이라 할 수 있겠다. 그럼 최적의 action을 판단하기에 충분하지 못한 상황에서 각 머신들의 reward 분포레 대한 정보를 얻어가기 위해서는 어떤 전략을 취해야 할까?
 
@@ -68,11 +68,11 @@ Multi-armed bandit (여기서는 구체적으로 10-armed bandit) 문제는 슬�
 먼저 agent가 각 시간 t에서 몇번 슬롯을 누를지 미리 프로그래밍이 되어있다고 해보자. (수학적으로는 $A_\bullet: \{0, 1, 2, \ldots\} \rightarrow \{a_1,a_2, \ldots ,a_{10}\}$ 이라는 함수를 정의하는 것과 같은 의미다.)
 
 
-### 일반화된 강화학습 문제
+#### 일반화된 강화학습 문제
 
 Multi-armed bandit 문제는 강화학습 문제 중에서도 한가지 요소가 극도로 단순화된 형태로 이를 nonassociative 라는 형용사로 표현한다. Associate가 “연결하다” 혹은 “연상시키다”라는 의미를 가지는 동사인데, 보다 일반적인 강화학습 문제에서는 state라는 요소가 도입되어 시간이 지남에 따라 agent의 action에 따라 state가 변화되는 가능성이 포함되어있다. 각 state 마다 agent가 취할 수 있는 action의 선택사양이 달라지기도 한다. 보다 복잡해지고 일반화된 형태의 강화학습 문제를 associative 하다고 표현한다. MAB 문제와 관련하여 예를 든다면 몇번 슬론머신을 선택하느냐에 따라 새로운 방으로 이동하여 슬롯머신이 아닌 다른 게임에 따른 action을 취하고 그로 인해 또 다른 방으로 이동하게 되고.. 이런 식으로 계속 진행된다.
 
 일반화된 강화학습의 개념은 agent와 environment, 그리고 action, state, reward, policy라는 주요소들이 포함된 형태로 정의되는데 수학적으로는 MDP (Markov Decision Process)라는 모델로 기술된다. 
 
-### 참고문헌
+#### 참고문헌
 1.  R. Sutton, A. Barto, *Reinforcement leaning: an introduction*, second edition ([final draft](http://incompleteideas.net/book/the-book-2nd.html)).
