@@ -65,7 +65,7 @@ Multi-armed bandit (여기서는 구체적으로 10-armed bandit) 문제는 슬�
 
 이제 남은것은 구체적으로 $Q_t(a)$라는 함수를 정의하는데 이것이 최대한 적은 시간은 소모하여 $q_{* }(a)$에 접근하도록 잘 고안해야 할 것이다. 충분히 큰 $t$에 대해 함수값들이 충분히 근접했다면 $Q_t(a_3)$의 수치가 가장 클 것임을 알 수 있다. 따라서, 가치함수 $Q_t(a)$를 어떻게 잘 정의하는가가 bandit 문제를 푸는 핵심이라고 하겠다.
 
-**Exploit vs. Explore**
+**Exploitation vs. Exploration**
 
 여태까지의 논의를 요약해보면, 10-armed bandit 문제를 해결하는 핵심은 가장 가치$q_{* }(a_i)$를 가지는 action $a_i$에 해당하는 슬롯머신을 최대한 빨리 찾는 것이다. 그 이후에는 오로지 $a_i$라는 action만 취하면 얻는 reward의 총합을 최대화할 수 있을 것이다. 일반적으로 현재 가진 정보로 판단할 때 최대 가치를 가지는 action"만"을 선택해나가는 전략을 exploitation이라고 한고 그러한 개별 행동을 greedy action이라고 한다.
 
