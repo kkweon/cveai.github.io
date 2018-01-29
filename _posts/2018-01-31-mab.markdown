@@ -10,7 +10,7 @@ tags: 강화학습 RL
 "카지노에 가본 적이 있으신가요?" 이 질문에 "그렇습니다!" 하고 답할 사람은 많지 않을 것 같지만 "카지노 로얄"  같은 영화를 본 경험이 있다면 카지노 풍경을 상상하는 것은 그리 어렵지 않을 것이다. 
 
 <figure>
-<img src="/assets/pics/casino.jpg" alt="Casino Royale">
+<img src="/assets/pics/mab/casino.jpg" alt="Casino Royale">
 <figcaption><center>카지노 풍경 (사진 출처: <a href="https://www.flickr.com/photos/prayitnophotography/4464000634">flickr</a>)</center>
 </figcaption>
 </figure>
@@ -22,7 +22,7 @@ tags: 강화학습 RL
 한편, 분산은 주어진 분포에 따라 수치를 추출하는 시행을 반복할 때 기대값에 가까운 값이 나올 가능성의 정도를 나타낸다고 볼 수 있다. 예를 들어 아래 그림으로 표현된 두 분포에 의거해 숫자를 출력해보면 분산이 상대적으로 작은 왼쪽 분포(분산 0.9)의 경우 인 0에 가까운 값이 자주 출력되는 반면, 분산이 큰 오른쪽 분포(분산 2.5)의 경우 평균에서 먼 값들도 유사한 빈도로 출력된다.
 
 <figure>
-<img src="/assets/pics/var.png" alt="variance">
+<img src="/assets/pics/mab/var.png" alt="variance">
 <figcaption><center>그림 1. 분산 (using: <a href="https://www.desmos.com/calculator/2kmx0enkkz">Desmos online calculator</a>)</center></figcaption>
 </figure>
 
@@ -35,7 +35,7 @@ tags: 강화학습 RL
 Multi-armed bandit. 팔 여러개 달린 강도란 뜻이다. 카지노의 슬롯머신을 가리켜 one armed bandit, 즉 “팔하나 달린 강도”라고 부르는 데서 유래한 용어로, "사실상" 돈을 강탈해간다는 의미에서 그러하다. 
 
 <figure>
-<img src="/assets/pics/one-armed-bandit.jpg" alt="One-armed banit">
+<img src="/assets/pics/mab/one-armed-bandit.jpg" alt="One-armed banit">
 <figcaption><center>One-armed bandits (사진 출처: <a href="https://commons.wikimedia.org/wiki/File:One-Armed_Bandits_at_Stockmen%27s_Hotel,_Elko,_Nevada_(83581).jpg">wikipedia</a>)</center></figcaption>
 </figure>
 
@@ -44,7 +44,7 @@ Multi-armed bandit. 팔 여러개 달린 강도란 뜻이다. 카지노의 슬�
 이제 1부터 10까지 번호가 붙여진 열개의 슬롯머신이 놓여있는 방을 머릿속에 떠올려보자. 기대값이 0이고 분산이 1인 표준정규분포에 따라 숫자 열개를 추출하자: $m_1, m_2, \ldots, m_{10}$. 각 슬롯머신의 reward 분포는 기대값이 $m_i$이고 분산이 1인 정규분포에 따르도록 설정이 된다. 아래 그림에 reward 분포가 도식화되어 있는데 (조금 후에 설명할 어떤 이유 때문에) 그림에서는 $i$번째 머신의 기대값 $m_i$가 $q_\*(i)$로 표시되어 있다.
 
 <figure>
-<img src="/assets/pics/rew-dist.png" alt="reward distribution">
+<img src="/assets/pics/mab/rew-dist.png" alt="reward distribution">
 <figcaption><center>그림 2. (출처: [1], 2장)</center></figcaption>
 </figure>
 
