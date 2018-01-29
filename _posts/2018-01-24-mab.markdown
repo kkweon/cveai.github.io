@@ -38,7 +38,7 @@ Multi-armed bandit. 팔 여러개 달린 강도란 뜻이다. 카지노의 슬�
 그림 1. (출처: [1], 2장)
 
 <figure>
-<img scr="https://cveai.github.io/assets/rew-dist.png" alt="reward distribution">
+<img src="https://cveai.github.io/assets/rew-dist.png" alt="reward distribution">
 <figcaption>그림 1. (출처: [1], 2장)</figcaption>
 </figure>
 
