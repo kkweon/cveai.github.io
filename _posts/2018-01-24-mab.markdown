@@ -38,7 +38,7 @@ Multi-armed bandit. 팔 여러개 달린 강도란 뜻이다. 카지노의 슬�
 [사진출처: wikipedia](https://commons.wikimedia.org/wiki/File:One-Armed_Bandits_at_Stockmen%27s_Hotel,_Elko,_Nevada_(83581).jpg)
 
 <figure>
-<img src="https://cveai.github.io/assets/var.png" alt="One-armed banit">
+<img src="https://cveai.github.io/assets/one-armed-bandit.jpg" alt="One-armed banit">
 <figcaption><center>One-armed bandits (using: <a href="https://commons.wikimedia.org/wiki/File:One-Armed_Bandits_at_Stockmen%27s_Hotel,_Elko,_Nevada_(83581).jpg">wikipedia</a>)</center></figcaption>
 </figure>
 
