@@ -80,7 +80,7 @@ $\varepsilon$-greedy 알고리즘은 정해진 (작은) 양수 $\varepsilon$에 
 <figcaption><center>그림 4. (출처: [1], 2장)</center></figcaption>
 </figure>
 
-그림 4는 $\varepsilon$의 크기에 따른 $\varepsilon$-greedy 알고리즘의 퍼포먼스를 그래프로 나타낸 것이다.
+그림 4는 $\varepsilon$의 크기에 따른 $\varepsilon$-greedy 알고리즘의 퍼포먼스를 그래프로 나타내어 서로 비교한 것이다.
 
 #### 일반화된 강화학습 문제
 
