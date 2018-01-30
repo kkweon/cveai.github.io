@@ -73,7 +73,7 @@ $$Q_t(a) := M/N$$
 
 #### $\varepsilon$-greedy 알고리즘
 
-$\varepsilon$-greedy 알고리즘은 정해진 (작은) 양수 $\varepsilon$에 대해 $1-\varepsilon$의 확률로 greedy action을 취하고 나머지 $\varepsilon$의 확률로 greeday action 이외의 action을 선택하는 알고리즘이다. $1-\varepsilon$의 확률로 최대한 reward를 긁어모으면서 (exploitation) 작은 $\varepsilon$ 확률로 더 가치있는 action이 있는지 탐색하는 (exploration) 전략인 것이다.
+$\varepsilon$-greedy 알고리즘은 정해진 (작은) 양수 $\varepsilon$에 대해 $1-\varepsilon$의 확률로 greedy action을 취하고 나머지 $\varepsilon$의 확률로 greedy action 이외의 action을 선택하는 알고리즘이다. $1-\varepsilon$의 확률로 최대한 reward를 긁어모으면서 (exploitation) 작은 $\varepsilon$ 확률로 더 가치있는 action이 있는지 탐색하는 (exploration) 전략인 것이다.
 
 <figure>
 <img src="/assets/pics/mab/performance.png" alt="performance">
