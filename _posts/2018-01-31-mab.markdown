@@ -11,7 +11,7 @@ tags: 강화학습 RL
 
 <figure>
 <img src="/assets/pics/mab/casino.jpg" alt="Casino Royale">
-<figcaption><center>카지노 풍경 (사진 출처: <a href="https://www.flickr.com/photos/prayitnophotography/4464000634">flickr</a>)</center>
+<figcaption>카지노 풍경 (사진 출처: <a href="https://www.flickr.com/photos/prayitnophotography/4464000634">flickr</a>)
 </figcaption>
 </figure>
 
