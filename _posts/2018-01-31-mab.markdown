@@ -73,17 +73,18 @@ $$Q_t(a) := M/N$$
 
 #### $\varepsilon$-greedy 알고리즘
 
-$\varepsilon$-greedy 알고리즘은 정해진 (작은) 양수 $\varepsilon$에 대해 $1-\varepsilon$의 확률로 greedy actiond을 취하고 나머지 $\varepsilon$의 확률로 greeday action이외의 action을 선택하는 알고리즘이다. 
+$\varepsilon$-greedy 알고리즘은 정해진 (작은) 양수 $\varepsilon$에 대해 $1-\varepsilon$의 확률로 greedy action을 취하고 나머지 $\varepsilon$의 확률로 greeday action 이외의 action을 선택하는 알고리즘이다. $1-\varepsilon$의 확률로 최대한 reward를 긁어모으면서 (exploitation) 작은 $\varepsilon$ 확률로 더 가치있는 action이 있는지 탐색하는 (exploration) 전략인 것이다.
 
 <figure>
 <img src="/assets/pics/mab/performance.png" alt="performance">
 <figcaption><center>그림 4. (출처: [1], 2장)</center></figcaption>
 </figure>
 
+그림 4는 $\varepsilon$의 크기에 따른 $\varepsilon$-greedy 알고리즘의 퍼포먼스를 그래프로 나타낸 것이다.
 
 #### 일반화된 강화학습 문제
 
-Multi-armed bandit (MAB) 문제는 강화학습 문제 중에서도 한가지 요소가 극도로 단순화된 형태로 이를 nonassociative 라는 형용사로 표현한다. Associate가 “연결하다” 혹은 “연상시키다”라는 의미를 가지는 동사인데, 보다 일반적인 강화학습 문제에서는 state라는 요소가 도입되어 시간이 지남에 따라 agent의 action에 의거해 state가 변화되는 가능성이 포함되어있다. 각 state 마다 agent가 취할 수 있는 action의 선택사양이 달라지기도 한다. 보다 복잡해지고 일반화된 형태의 강화학습 문제를 associative 하다고 표현한다. MAB 문제와 관련하여 예를 든다면 몇번 슬론머신을 선택하느냐에 따라 새로운 방으로 이동하여 슬롯머신이 아닌 다른 게임에 따른 action을 취하고 그로 인해 또 다른 방으로 이동하게 되고.. 이런 식으로 계속 진행된다.
+Multi-armed bandit (MAB) 문제는 강화학습 문제 중에서도 한가지 요소가 극도로 단순화된 형태로 이를 nonassociative 라는 형용사로 표현한다. Associate가 “연결하다” 혹은 “연상시키다”라는 의미를 가지는 동사인데, 보다 일반적인 강화학습 문제에서는 state라는 요소가 도입되어 시간이 지남에 따라 agent의 action에 의거해 state가 변화되는 가능성이 포함되어있다. 각 state 마다 agent가 취할 수 있는 action의 선택사양이 달라지기도 한다. 보다 복잡해지고 일반화된 형태의 강화학습 문제를 associative 하다고 표현한다. MAB 문제와 관련하여 예를 든다면 몇번 슬롯머신을 선택하느냐에 따라 새로운 방으로 이동하여 슬롯머신이 아닌 다른 게임에 따른 action을 취하고 그로 인해 또 다른 방으로 이동하게 되고.. 이런 식으로 계속 진행된다.
 
 일반화된 강화학습의 개념은 agent와 environment, 그리고 action, state, reward, policy라는 주요소들이 포함된 형태로 정의되는데 수학적으로는 MDP (Markov Decision Process)라는 모델로 기술된다. 
 
